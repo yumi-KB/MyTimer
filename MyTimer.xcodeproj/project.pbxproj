@@ -13,6 +13,7 @@
 		4BF88439255274C00053A9AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF88437255274C00053A9AD /* Main.storyboard */; };
 		4BF8843B255274C10053A9AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF8843A255274C10053A9AD /* Assets.xcassets */; };
 		4BF8843E255274C10053A9AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF8843C255274C10053A9AD /* LaunchScreen.storyboard */; };
+		4BF8844725527B500053A9AD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8844625527B500053A9AD /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4BF8843A255274C10053A9AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BF8843D255274C10053A9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BF8843F255274C10053A9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BF8844625527B500053A9AD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		4BF88430255274C00053A9AD /* MyTimer */ = {
 			isa = PBXGroup;
 			children = (
+				4BF8844625527B500053A9AD /* SettingViewController.swift */,
 				4BF88431255274C00053A9AD /* AppDelegate.swift */,
 				4BF88433255274C00053A9AD /* SceneDelegate.swift */,
 				4BF88435255274C00053A9AD /* ViewController.swift */,
@@ -140,6 +143,7 @@
 				4BF88436255274C00053A9AD /* ViewController.swift in Sources */,
 				4BF88432255274C00053A9AD /* AppDelegate.swift in Sources */,
 				4BF88434255274C00053A9AD /* SceneDelegate.swift in Sources */,
+				4BF8844725527B500053A9AD /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
