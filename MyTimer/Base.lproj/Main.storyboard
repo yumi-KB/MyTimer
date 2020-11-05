@@ -16,17 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="P6G-VP-Ot4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QK7-hH-8MW">
                                 <rect key="frame" x="57" y="458" width="140" height="140"/>
                                 <state key="normal" image="btn_start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O54-yU-3gp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igk-UH-ttq">
                                 <rect key="frame" x="217" y="458" width="140" height="140"/>
                                 <state key="normal" image="btn_stop">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="stopButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ewZ-HQ-3E4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTs-wV-axl">
                                 <rect key="frame" x="171.5" y="330" width="71" height="36"/>
@@ -34,9 +43,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="P6G-VP-Ot4">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -54,9 +60,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="18z-x1-Tzl">
-                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="QaO-ru-wCI"/>
+                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="QaO-ru-wCI">
+                            <connections>
+                                <action selector="setingButtonAction:" destination="BYZ-38-t0r" id="D4R-Zq-8Bi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="countDownLabel" destination="oTs-wV-axl" id="p93-CX-wiP"/>
                         <segue destination="PCk-rC-57h" kind="show" identifier="goSetting" id="i5A-iT-y40"/>
                     </connections>
                 </viewController>
@@ -78,6 +89,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqJ-qY-U4a">
                                 <rect key="frame" x="147" y="488" width="120" height="120"/>
                                 <state key="normal" image="btn_ decision"/>
+                                <connections>
+                                    <action selector="decisionButtonAction:" destination="PCk-rC-57h" eventType="touchUpInside" id="XfA-jZ-tE2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HXv-49-vha"/>
@@ -91,6 +105,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wqf-E6-2RC"/>
+                    <connections>
+                        <outlet property="timerSettingPicker" destination="6Sp-Sd-Ddn" id="BNe-gT-1Pf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Fd-qf-7gQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
