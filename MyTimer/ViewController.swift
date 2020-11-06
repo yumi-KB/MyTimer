@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     var count = 0
     
     // 設定値を扱うキーを設定
-    let settingKey = "time_value"
+    let settingKey = "timer_value"
 
     override func viewDidLoad() {
         super.viewDidLoad()

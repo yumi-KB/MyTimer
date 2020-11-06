@@ -62,8 +62,9 @@ class SettingViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // UserDefaultsの設定
         let settings = UserDefaults.standard
-        settings.setValue(settingArray[row], forKey: settingKey)
-        settings.synchronize()
+        settings.set(settingArray[row], forKey: settingKey)
+        // synchronize() は現在不要なので削除
+        // settings.synchronize()
     }
     
     /*
